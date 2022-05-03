@@ -13,7 +13,7 @@
     <BrandlogoTwo></BrandlogoTwo>
 
     <!-- BlogArticle section -->
-    <BlogArticle></BlogArticle>
+    <!-- <BlogArticle></BlogArticle> -->
 
     <!-- Skill section -->
     <Skill></Skill>

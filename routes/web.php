@@ -15,6 +15,7 @@ use Inertia\Inertia;
 |
 */
 
+
 Route::get('/', function () {
     return Inertia::render('Home', [
         'canLogin' => Route::has('login'),
@@ -24,9 +25,9 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
-Route::get('/project', function () {
-    return Inertia::render('Projects');
-})->name('projects');
+// Route::get('/project', function () {
+//     return Inertia::render('Projects');
+// })->name('projects');
 
 Route::get('/blog', function () {
     return Inertia::render('Blog');

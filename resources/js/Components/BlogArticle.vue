@@ -30,10 +30,10 @@
                 blogcontent.subtitle
               }}</span>
               <h2 class="title">
-                <inertia-link :href="route('blog')"
+                <!-- <inertia-link :href="route('blog')"
                   >{{ blogcontent.titlewhite }}
                   <span>{{ blogcontent.titlegray }}</span></inertia-link
-                >
+                > -->
               </h2>
             </div>
           </div>

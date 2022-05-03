@@ -5,9 +5,9 @@
     aria-labelledby="offcanvasRightLabel"
   >
     <div class="offcanvas-header">
-      <!-- <router-link to="/" class="offcanvas-title" id="offcanvasRightLabel"
-        ><img src="/images/logo-2.png" alt="" title=""
-      /></router-link> -->
+      <inertia-link :href="route('home')" class="offcanvas-title" id="offcanvasRightLabel"
+        ><img src="/images/logo-2.png" alt="Niranjan Pandey" title=""
+      /></inertia-link>
       <button
         class="btn-close text-reset"
         data-bs-dismiss="offcanvas"
@@ -28,13 +28,13 @@
                 <li>
                   <inertia-link :href="route('about')">About </inertia-link>
                 </li>
-                <li>
+                <!-- <li>
                   <inertia-link href="/pricing">Pricing </inertia-link>
-                </li>
+                </li> -->
               </ul>
             </li>
 
-            <li class="menu-item-has-children">
+            <!-- <li class="menu-item-has-children">
               <inertia-link href="/projects">Project</inertia-link>
               <ul class="sub-menu">
                 <li>
@@ -44,10 +44,10 @@
                   <inertia-link href="/project/1">Project Details</inertia-link>
                 </li>
               </ul>
-            </li>
+            </li> -->
 
-            <li class="menu-item-has-children">
-              <!-- <router-link to="/blog">Blog</router-link> -->
+            <!-- <li class="menu-item-has-children">
+              <router-link to="/blog">Blog</router-link>
               <ul class="sub-menu">
                 <li>
                   <inertia-link href="/blog">Blog</inertia-link>
@@ -56,7 +56,7 @@
                   <inertia-link href="/blog/1">Blog Details</inertia-link>
                 </li>
               </ul>
-            </li>
+            </li> -->
 
             <li>
               <inertia-link href="/contact">Contact Us</inertia-link>

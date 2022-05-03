@@ -14,9 +14,7 @@
                 <ul class="menu-list">
                     <li class="active">all</li>
                     <li>Web Design</li>
-                    <li>branding</li>
-                    <li>mobile app</li>
-                    <li>motion</li>
+                    <li>web Development</li>
                 </ul>
             </div>
             <!-- Filter  Section End -->

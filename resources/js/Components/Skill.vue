@@ -57,25 +57,40 @@ export default {
         return {
             skills: [
                 {
-                    title: "Skill Section",
-                    parcentage: 90,
+                    title: "html5/CSS3/bootstrap5",
+                    parcentage: 80,
                     styleObject: {  
-                        width: '90%',
+                        width: '80%',
                         transition: '.6s'
                     }  
                 },
+                
                 {
-                    title: "branding",
+                    title: "tailwindcss",
+                    parcentage: 85,
+                    styleObject: {
+                        width: '85%'
+                    }  
+                },
+                {
+                    title: "Laravel",
                     parcentage: 70,
-                    styleObject: {  
+                    styleObject: {
                         width: '70%'
                     }  
                 },
                 {
-                    title: "animation / motion",
-                    parcentage: 85,
+                    title: "Vuejs/Inertiajs",
+                    parcentage: 65,
                     styleObject: {
-                        width: '85%'
+                        width: '65%'
+                    }  
+                },
+                {
+                    title: "Git/NPM",
+                    parcentage: 75,
+                    styleObject: {
+                        width: '75%'
                     }  
                 }
             ]

@@ -27,7 +27,7 @@
                 :class="{ active: show === index }"
               >
                 <div class="box-content">
-                  <!-- <h4 class="title"><router-link to="/about">{{feature.title}}</router-link></h4> -->
+                  <h4 class="title">{{feature.title}}</h4>
                   <p>{{ feature.text }}</p>
                 </div>
                 <div class="box-icon">
@@ -53,27 +53,27 @@ export default {
       show: false,
       featureLogos: [
         {
-          title: "profressional and dedicate team",
-          text: "Building architectures with modern technology.",
-          icon: "icofont-labour",
+          title: "Fast",
+          text: "Fast load times and lag free interaction, my highest priority.",
+          icon: "icofont-speed-meter",
           more: "Read more",
         },
         {
-          title: "unique design",
-          text: "Building architectures with modern technology.",
-          icon: "icofont-ruler-compass-alt",
+          title: "Intutive",
+          text: "Strong preference for easy to use, intuitive UX/UI.",
+          icon: "icofont-light-bulb",
           more: "Read more",
         },
         {
-          title: "affordable and flexiable",
-          text: "Building architectures with modern technology.",
-          icon: "icofont-credit-card",
+          title: "Responsive",
+          text: "My layouts will work on any device, big or small.",
+          icon: "icofont-responsive",
           more: "Read more",
         },
         {
-          title: "24/7 support",
-          text: "Building architectures with modern technology.",
-          icon: "icofont-live-support",
+          title: "Dynamic",
+          text: "Websites don't have to be static, I love making pages come to life.",
+          icon: "icofont-dashboard-web",
           more: "Read more",
         },
       ],

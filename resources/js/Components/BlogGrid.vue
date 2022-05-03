@@ -43,9 +43,9 @@
             >
               <div class="single-blog">
                 <div class="blog-images">
-                  <router-link :to="`/blog/${blog.id}`"
+                  <!-- <router-link :to="`/blog/${blog.id}`"
                     ><img :src="`${blog.imgSrc}`" :alt="blog.alt"
-                  /></router-link>
+                  /></router-link> -->
                 </div>
 
                 <div class="blog-content">
@@ -61,9 +61,9 @@
                     </li>
                   </ul>
                   <h3 class="title">
-                    <router-link :to="`/blog/${blog.id}`">{{
+                    <!-- <router-link :to="`/blog/${blog.id}`">{{
                       blog.title
-                    }}</router-link>
+                    }}</router-link> -->
                   </h3>
 
                   <p>{{ blog.content }}</p>

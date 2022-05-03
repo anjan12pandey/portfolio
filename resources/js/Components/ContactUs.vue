@@ -17,7 +17,7 @@
           >
             <!-- Contact Info Start -->
             <div class="contact-info">
-              <span class="mail"
+              <span class="mail text-sm"
                 ><a href="mailto:john.anjanpandey@hotmail.com"
                   >john.anjanpandey@hotmail.com</a
                 ></span

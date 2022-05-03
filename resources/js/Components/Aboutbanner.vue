@@ -35,9 +35,9 @@
               <h2 class="title">Service</h2>
             </div>
             <h4 class="service-text">
-              <router-link to="/contact"
+              <inertia-link :href="route('contact')"
                 >Frontend Design, Laravel Web App & <br />
-                Logo Design</router-link
+                Logo Design</inertia-link
               >
             </h4>
           </div>
@@ -47,7 +47,7 @@
 
       <!-- About Banner Image Start -->
       <div class="about-banner-image">
-        <img src="/images/about-images-2.jpg" alt="" />
+        <img src="/images/about-images-3.jpg" alt="" />
       </div>
       <!-- About Banner Image End -->
     </div>

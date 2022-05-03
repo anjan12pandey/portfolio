@@ -17,12 +17,12 @@
       <div class="footer-copyright-social">
         <div class="footer-copyright">
           <p>
-            &copy; 2021 <span> Andle</span> Made with
+            &copy; 2022 <span> niranjanpandey.tech</span> Made with
             <i class="icofont-heart" aria-hidden="true"></i> by
             <a
-              href="https://themeforest.net/user/codecarnival/portfolio"
+              href="/"
               target="_blank"
-              >Codecarnival</a
+              >Niranjan Pandey</a
             >
           </p>
         </div>

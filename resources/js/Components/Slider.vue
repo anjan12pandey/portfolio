@@ -25,9 +25,9 @@
                 <h4 class="sub-title">{{ slider.slidersubTitle }}</h4>
                 <h1 class="main-title" v-html="slider.sliderTitle"></h1>
                 <p v-html="slider.sliderDesc"></p>
-                <inertia-link :href="route('projects')" class="slider-btn">{{
+                <a target="_blank" :href="slider.link" class="slider-btn">{{
                   slider.btntext
-                }}</inertia-link>
+                }}</a>
               </div>
               <!-- Slider Content End -->
             </div>
@@ -95,20 +95,22 @@ export default {
       },
       sliders: [
         {
-          sliderBg: "/images/slider/slider-1.jpg",
+          sliderBg: "/images/slider/slider-2.jpg",
           slidersubTitle: "Latest project",
-          sliderTitle: "Bowmore Wine <br> Rebranding",
+          sliderTitle: "Moms's <br> Bakery",
           sliderDesc:
-            "Combine with ideas of owner, Dustin Mahone. <br> Arquito’s team completed a super villa with many powerful features, <br> help owner really enjoy his life beside the beach",
+            "Combine with ideas of owner, Anurag Raj. <br> I completed a e-commerce web app with many powerful features, <br> help owner gets what he wants.",
           btntext: "See Project",
+          link: "https://momsbakery.in"
         },
         {
-          sliderBg: "/images/slider/slider-1.jpg",
-          slidersubTitle: "Latest project",
-          sliderTitle: "Bowmore Wine <br> Rebranding",
+          sliderBg: "/images/slider/slider-3.jpg",
+          slidersubTitle: "Ro Care",
+          sliderTitle: "Ro Customer <br> Care Ranchi",
           sliderDesc:
-            "Combine with ideas of owner, Dustin Mahone. <br> Arquito’s team completed a super villa with many powerful features, <br> help owner really enjoy his life beside the beach",
+            "Combine with ideas of owner, Pankaj Chaubey. <br> I completed a web app with many powerful features, <br> help owner gets what he wants.",
           btntext: "See Project",
+          link: "https://ro-customer-care-ranchi.in"
         },
       ],
       slidersocials: [

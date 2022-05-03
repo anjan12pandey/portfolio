@@ -21,7 +21,7 @@
                                     <li>{{pricing.listtitle}}</li>
                                     <li v-html="pricing.listtext"></li>
                                 </ul>
-                                <router-link to="/contact" class="btn btn-outline-primary d-block">{{pricing.btntext}}</router-link>
+                                <inertia-link href="/contact" class="btn btn-outline-primary d-block">{{pricing.btntext}}</inertia-link>
                             </div>
                         </div>
                         <!-- Single Pricing End -->

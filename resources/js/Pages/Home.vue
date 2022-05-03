@@ -1,4 +1,8 @@
 <template>
+<Head>
+  <title>Welcome: </title>
+  <meta name="description" content="Your page description">
+</Head>
   <div class="main-wrapper dark-bg">
     <!-- Navbar section -->
     <Header></Header>
@@ -17,15 +21,20 @@
 
     <!-- Features section -->
     <Features></Features>
-
+    <hr>
     <!-- Fanfact section -->
-    <Funfact></Funfact>
+    <!-- <Funfact></Funfact> -->
 
+    <!-- Skill section -->
+    <Skill></Skill>
+    
     <!-- Workgallery section -->
-    <Workgallery></Workgallery>
+    <!-- <Workgallery class="skills-wrapper"></Workgallery> -->
 
     <!-- BlogArticle section -->
-    <BlogArticle></BlogArticle>
+    <!-- <BlogArticle></BlogArticle> -->
+
+    
 
     <!-- Testimonial section -->
     <Testimonial></Testimonial>
@@ -45,8 +54,11 @@ import Features from "@/Components/Features";
 import Funfact from "@/Components/Funfact";
 import Workgallery from "@/Components/Workgallery";
 import BlogArticle from "@/Components/BlogArticle";
+import Skill from "@/Components/Skill";
 import Testimonial from "@/Components/Testimonial";
 import Footer from "@/Components/Footer";
+import { Head } from '@inertiajs/inertia-vue3'
+
 
 export default {
   components: {
@@ -60,7 +72,9 @@ export default {
     Workgallery,
     BlogArticle,
     Testimonial,
+    Skill,
     Footer,
+    Head,
   },
 };
 </script>
