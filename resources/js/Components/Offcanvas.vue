@@ -5,9 +5,15 @@
     aria-labelledby="offcanvasRightLabel"
   >
     <div class="offcanvas-header">
-      <inertia-link :href="route('home')" class="offcanvas-title" id="offcanvasRightLabel"
-        ><img src="/images/logo-2.png" alt="Niranjan Pandey" title=""
-      /></inertia-link>
+      <inertia-link
+        :href="route('home')"
+        class="offcanvas-title"
+        id="offcanvasRightLabel"
+      ><img
+          src="/images/logo-2.png"
+          alt="Niranjan Pandey"
+          title=""
+        /></inertia-link>
       <button
         class="btn-close text-reset"
         data-bs-dismiss="offcanvas"
@@ -16,7 +22,10 @@
     </div>
     <div class="p-0 offcanvas-body">
       <div class="mobile-navigation">
-        <nav class="offcanvas-navigation" id="offcanvas-navigation">
+        <nav
+          class="offcanvas-navigation"
+          id="offcanvas-navigation"
+        >
           <ul class="offcanvas-navigation__menu">
             <li class="menu-item-has-children">
               <inertia-link href="/">Home</inertia-link>
@@ -59,7 +68,7 @@
             </li> -->
 
             <li>
-              <inertia-link href="/contact">Contact Us</inertia-link>
+              <inertia-link href="/contact">Say Hello</inertia-link>
             </li>
           </ul>
         </nav>

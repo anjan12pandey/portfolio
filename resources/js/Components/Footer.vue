@@ -6,9 +6,7 @@
       <div class="text-center footer-info-box">
         <h4 class="title">Let’s work together</h4>
         <h2 class="mail">
-          <a href="mailto:john.anjanpandey@hotmail.com"
-            >john.anjanpandey@hotmail.com</a
-          >
+          <a href="mailto:admin@niranjanpandey.tech">admin@niranjanpandey.tech</a>
         </h2>
       </div>
       <!-- Footer Info Box End -->
@@ -18,23 +16,27 @@
         <div class="footer-copyright">
           <p>
             &copy; 2022 <span> niranjanpandey.tech</span> Made with
-            <i class="icofont-heart" aria-hidden="true"></i> by
-            <a
+            <i
+              class="icofont-heart"
+              aria-hidden="true"
+            ></i> by
+            <inertia-link
               href="/"
               target="_blank"
-              >Niranjan Pandey</a
-            >
+            >Niranjan Pandey</inertia-link>
           </p>
         </div>
         <div class="footer-social">
           <ul class="social">
-            <li v-for="(social, socials) in footersocials" :key="socials">
+            <li
+              v-for="(social, socials) in footersocials"
+              :key="socials"
+            >
               <a
                 target="_blank"
                 :class="social.classname"
                 :href="social.link"
-                >{{ social.text }}</a
-              >
+              >{{ social.text }}</a>
             </li>
           </ul>
         </div>

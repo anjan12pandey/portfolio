@@ -17,23 +17,20 @@
           >
             <!-- Contact Info Start -->
             <div class="contact-info">
-              <span class="mail text-sm"
-                ><a href="mailto:john.anjanpandey@hotmail.com"
-                  >john.anjanpandey@hotmail.com</a
-                ></span
-              >
-              <span class="number"
-                ><a href="tel:+917858808431">(+91) 7858808431</a></span
-              >
+              <span class="mail text-sm">Thanks for taking the time to reach out. How can i help you today?</span>
             </div>
             <!-- Contact Info End -->
 
             <!-- Contact Form Start -->
-            <div class="contact-form">
+            <div
+              class="contact-form"
+              style="min-height: 300px"
+            >
               <form
+                @submit.prevent="submit"
                 id="contact-form"
-                action="https://getform.io/f/6af30b8c-e767-4d30-b964-d7e38d35078b"
                 method="POST"
+                v-if="!form.wasSuccessful"
               >
                 <div class="row">
                   <div class="col-md-6">
@@ -42,6 +39,7 @@
                       <input
                         type="text"
                         name="name"
+                        v-model="form.name"
                         placeholder="Enter your name..."
                         required
                       />
@@ -54,6 +52,7 @@
                       <input
                         type="email"
                         name="email"
+                        v-model="form.email"
                         placeholder="youemail@domain.com"
                         required
                       />
@@ -66,6 +65,7 @@
                       <input
                         type="text"
                         name="subject"
+                        v-model="form.subject"
                         placeholder="Subject (optional)"
                         required
                       />
@@ -77,6 +77,7 @@
                     <div class="single-form">
                       <textarea
                         name="message"
+                        v-model="form.message"
                         placeholder="Here goes your message"
                       ></textarea>
                     </div>
@@ -92,19 +93,25 @@
                   </div>
                 </div>
               </form>
+              <div
+                v-else
+                class="mt-10 fs-2 fw-bold"
+              >Thank's for contacting us. We will reach you soon.</div>
             </div>
             <!-- Contact Form End -->
 
             <!-- Contact Social Start -->
             <div class="contact-social">
               <ul>
-                <li v-for="(social, socials) in socials" :key="socials">
+                <li
+                  v-for="(social, socials) in socials"
+                  :key="socials"
+                >
                   <a
                     target="_blank"
                     :class="social.classname"
                     :href="social.link"
-                    >{{ social.text }}</a
-                  >
+                  >{{ social.text }}</a>
                 </li>
               </ul>
             </div>
@@ -139,13 +146,26 @@ export default {
           text: "Dribbble",
         },
       ],
-      contactBg: "/images/contact-bg.jpg",
+      contactBg: "/images/contact-bg-1.jpg",
+      form: this.$inertia.form({
+        name: null,
+        email: null,
+        subject: null,
+        message: null,
+      }),
     };
   },
 
   methods: {
     onSwiper(swiper) {
       this.swiper = swiper;
+    },
+    submit() {
+      this.form.post(route("contacts.store"), {
+        preserveState: true,
+        preserveScroll: true,
+        onSuccess: () => this.form.reset(),
+      });
     },
   },
 };

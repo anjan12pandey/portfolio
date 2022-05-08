@@ -1,8 +1,12 @@
 <template>
-<Head>
-  <title>Welcome: </title>
-  <meta name="description" content="Your page description">
-</Head>
+  <inertia-head>
+    <title>My portfolio | </title>
+    <meta
+      name="description"
+      content="Hi! My name is Niranjan Pandey, I'm a full stack developer having 3 years of experience."
+    >
+  </inertia-head>
+
   <div class="main-wrapper dark-bg">
     <!-- Navbar section -->
     <Header></Header>
@@ -14,7 +18,7 @@
     <Offcanvas></Offcanvas>
 
     <!-- BrandLogo section -->
-    <BrandLogo></BrandLogo>
+    <!-- <BrandLogo></BrandLogo> -->
 
     <!-- About section -->
     <AboutSection></AboutSection>
@@ -27,14 +31,12 @@
 
     <!-- Skill section -->
     <Skill></Skill>
-    
+
     <!-- Workgallery section -->
     <!-- <Workgallery class="skills-wrapper"></Workgallery> -->
 
     <!-- BlogArticle section -->
     <!-- <BlogArticle></BlogArticle> -->
-
-    
 
     <!-- Testimonial section -->
     <Testimonial></Testimonial>
@@ -57,8 +59,6 @@ import BlogArticle from "@/Components/BlogArticle";
 import Skill from "@/Components/Skill";
 import Testimonial from "@/Components/Testimonial";
 import Footer from "@/Components/Footer";
-import { Head } from '@inertiajs/inertia-vue3'
-
 
 export default {
   components: {
@@ -74,7 +74,6 @@ export default {
     Testimonial,
     Skill,
     Footer,
-    Head,
   },
 };
 </script>

@@ -23,11 +23,11 @@
               <p>
                 During my career I have worked on various types of projects with
                 various technologies, but very often I feel that i am a junior
-                develper who just started coding. <br />
+                develper who just started coding. I value simple content structure, clean design pattern, and thoughtful interactions. <br />
                 <br />
               </p>
 
-              <img class="signechar" src="/images/signechar.png" alt="" />
+              <!-- <img class="signechar" src="/images/signechar.png" alt="" /> -->
               <h6 class="name">Niranjan Pandey</h6>
             </div>
           </div>
