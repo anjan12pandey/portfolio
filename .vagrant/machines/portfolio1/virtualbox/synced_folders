@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/code/protfolio1":{"type":null,"mount_options":["uid=1000","gid=1000","_netdev"],"guestpath":"/home/vagrant/code/protfolio1","hostpath":"E:/Laravel/portfolio","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"E:/Laravel/portfolio","disabled":false,"__vagrantfile":true}}}
