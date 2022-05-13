@@ -1,9 +1,12 @@
 <?php
 
+use App\Http\Controllers\CategoryPostController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PostController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use TCG\Voyager\Facades\Voyager;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,13 +29,10 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
-// Route::get('/project', function () {
-//     return Inertia::render('Projects');
-// })->name('projects');
+Route::get('/blogs', [PostController::class, 'index'])->name('blogs.index');
+Route::get('/posts/{post:slug}', [PostController::class, 'show'])->name('posts.show');
 
-Route::get('/blog', function () {
-    return Inertia::render('Blog');
-})->name('blog');
+Route::get('/categories/{category:slug}', [CategoryPostController::class, 'index'])->name('categories.posts.index');
 
 Route::get('/contact', function () {
     return Inertia::render('Contact');
@@ -52,4 +52,9 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
+});
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });

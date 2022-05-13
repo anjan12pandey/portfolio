@@ -56,7 +56,7 @@
             </li> -->
 
             <!-- <li class="menu-item-has-children">
-              <router-link to="/blog">Blog</router-link>
+              <inertia-link :href="route('blogs.index')">Blog</inertia-link>
               <ul class="sub-menu">
                 <li>
                   <inertia-link href="/blog">Blog</inertia-link>
@@ -66,6 +66,10 @@
                 </li>
               </ul>
             </li> -->
+
+            <li>
+              <inertia-link :href="route('blogs.index')">Blogs</inertia-link>
+            </li>
 
             <li>
               <inertia-link href="/contact">Say Hello</inertia-link>
